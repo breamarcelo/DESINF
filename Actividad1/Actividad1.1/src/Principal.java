@@ -22,9 +22,15 @@ public class Principal implements ActionListener {
             String telefono = miJFrame.miJPanel.campoTelefono.getText();
             Alumno nuevoAlumno = new Alumno(nombre, apellidos, email, edad, telefono);
             listaAlumnos[i] = nuevoAlumno;
-
+            miJFrame.miJPanel.campoNombre.setText("");
+            miJFrame.miJPanel.campoApellidos.setText("");
+            miJFrame.miJPanel.campoEmail.setText("");
+            miJFrame.miJPanel.campoEdad.setText("");
+            miJFrame.miJPanel.campoTelefono.setText("");
+            
             encontrarMasJoven();
         } else {
+            miJFrame.miJPanel.mensajeError.setText("No se pueden alamacenar más alumnos.");
             miJFrame.miJPanel.mensajeError.setVisible(true);
         }
     }
