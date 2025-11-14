@@ -5,8 +5,7 @@ import java.awt.event.ActionListener;
 public class Principal implements ActionListener {
     static Alumno[] listaAlumnos = new Alumno[5];    
     static MiJFrame miJFrame = new MiJFrame();
-    public static void main(String[] args) throws Exception {
-    }
+    public static void main(String[] args) throws Exception {}
 
     @Override
     public void actionPerformed(ActionEvent e) {

@@ -2,8 +2,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridLayout;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -35,36 +33,15 @@ public class MiJPanel extends JPanel{
         formulario.add(new JLabel("Email:"));
         formulario.add(campoEmail);
         formulario.add(mensajeErrorEdad);
-
-        mensajeErrorEdad.setVisible(false);
         mensajeErrorEdad.setForeground(Color.RED);
+        mensajeErrorEdad.setVisible(false);
         formulario.add(new JLabel("Edad:"));
         formulario.add(campoEdad);
-        campoEdad.addKeyListener(new KeyListener() {
-            @Override
-            public void keyTyped(KeyEvent e) {
-                if(!campoEdad.getText().matches("[0-9]+")){
-                    mensajeErrorEdad.setVisible(true);
-                    mensajeErrorEdad.setText("La edad debe ser un número");
-                } else {
-                    mensajeErrorEdad.setVisible(false);
-                    mensajeErrorEdad.setText("");
-                }
-            }
-            
-            @Override
-            public void keyPressed(KeyEvent e) {}
-            
-            @Override
-            public void keyReleased(KeyEvent e) {}
-            
-        });
-
         formulario.add(new JLabel("Teléfono:"));
         formulario.add(campoTelefono);
         formulario.add(masJovenLabel);
-        mensajeError.setVisible(false);
         mensajeError.setForeground(Color.RED);
+        mensajeError.setVisible(false);
         formulario.add(mensajeError);
         JButton btnAniadir = new JButton("Añadir");
         btnAniadir.setForeground(Color.WHITE);
