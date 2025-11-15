@@ -9,6 +9,7 @@ public class Principal implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        // validación
         if(listaAlumnos[listaAlumnos.length-1] == null){
             int i = 0;
             while(listaAlumnos[i] != null){
