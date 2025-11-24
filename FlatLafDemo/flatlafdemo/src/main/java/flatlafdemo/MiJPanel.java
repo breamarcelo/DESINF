@@ -12,7 +12,7 @@ public class MiJPanel extends JPanel{
         add(new JTextField());
         add(new JButton("Hola"));
 
-        
+        // añadir Layout
 
         
     }
