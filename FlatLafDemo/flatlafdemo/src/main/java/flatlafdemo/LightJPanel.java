@@ -13,8 +13,8 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 
-public class MiJPanel extends JPanel{
-    public MiJPanel(){
+public class LightJPanel extends JPanel{
+    public LightJPanel(){
         setLayout(new GridLayout(4, 1));
         setBorder(new EmptyBorder(15,15,15,15));
         JPanel nombrePanel = new JPanel();
@@ -35,7 +35,6 @@ public class MiJPanel extends JPanel{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("clicked");
                 nombreTextField.setText("");
                 edadTextField.setText("");
             }
