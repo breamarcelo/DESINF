@@ -2,11 +2,11 @@ package flatlafdemo;
 
 import javax.swing.UIManager;
 
-import com.formdev.flatlaf.FlatLightLaf;
+import com.formdev.flatlaf.FlatDarkLaf;
 
 public class Main {
     public static void main(String[] args) {
-        FlatLightLaf.setup();
+        FlatDarkLaf.setup();
 
         // UIManager
         UIManager.put("Component.arc", 12);
