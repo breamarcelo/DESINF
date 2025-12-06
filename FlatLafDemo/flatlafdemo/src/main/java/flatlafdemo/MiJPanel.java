@@ -14,6 +14,7 @@ public class MiJPanel extends JPanel{
 
         // añadir Layout
 
+        // desarrollar lógica
         
     }
 }
