@@ -7,6 +7,7 @@ import com.formdev.flatlaf.FlatLightLaf;
 
 public class Main {
     public static void main(String[] args) {
+        // formulario Light
         FlatLightLaf.setup();
 
         UIManager.put("Component.arc", 12);
@@ -15,6 +16,7 @@ public class Main {
         
         LightJFrame lightJFrame = new LightJFrame();
         
+        // formulario dark
         FlatDarkLaf.setup();
 
         UIManager.put("Component.arc", 12);

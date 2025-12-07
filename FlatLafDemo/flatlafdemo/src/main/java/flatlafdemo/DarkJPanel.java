@@ -57,7 +57,7 @@ public class DarkJPanel extends JPanel {
             
         });
         botones1.add(limpiarBtn);
-
+        
         JButton saludarBtn = new JButton("SALUDAR");
         saludarBtn.addActionListener(new ActionListener() {
 
