@@ -48,6 +48,7 @@ public class LightJPanel extends JPanel{
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null, "Hola " + nombreTextField.getText());
+                // check popup style
             }
             
         });
